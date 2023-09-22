@@ -1,0 +1,58 @@
+const x = Math.floor(Math.random()*100+1);
+
+const y = Math.floor(Math.random()*50+1);
+
+
+// get the sum 
+
+
+const sum = x + y;
+
+const sumOutPut = `${x} + ${y} = ${sum}`;
+
+console.log(sumOutPut);
+// console.log(sum);
+
+
+
+// get the diff
+
+
+const diff = x - y;
+
+const diffOutPut = `${x} - ${y} = ${diff}`;
+
+console.log(diffOutPut);
+
+
+// get the prod
+
+
+const prod = x * y;
+
+const prodOutPut = `${x} * ${y} = ${prod}`;
+
+console.log(prodOutPut);
+
+
+
+// get the quot
+
+
+const quot= x / y;
+
+const quotOutPut = `${x} / ${y} = ${quot}`;
+
+console.log(quotOutPut);
+
+
+
+
+// get the remainder
+
+
+const rem = x / y;
+
+const remOutPut = `${x} % ${y} = ${rem}`;
+
+console.log(remOutPut);

@@ -1,0 +1,39 @@
+const socials = [ 'facebook', 'twitter', 'instagram', 'youtube' ];
+
+// console.log(socials.__proto__);
+
+// socials.forEach(function(item){
+
+// console.log(item);
+// })
+
+
+
+// socials.forEach((item,index,arr)=> console.log(`${index}-${item}`, arr));
+        
+
+
+function logSocial(social){
+
+        console.log(social);
+}
+
+socials.forEach(logSocial);
+
+
+
+const socials1 = [
+         {name: 'facebook',url: 'http://facebook.com'},
+         {name: 'twitter',url: 'http://twitter.com'},
+         {name: 'instagram',url: 'http://instagram.com'},
+         {name: 'youtube',url: 'http://youtube.com'},      
+
+
+];
+
+
+socials1.forEach((item)=> console.log(item.url));
+
+
+ 
+

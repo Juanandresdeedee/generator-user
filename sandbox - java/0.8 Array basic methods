@@ -1,0 +1,33 @@
+ 
+let x;
+
+ const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+
+// arr.push(100);
+
+// arr.pop();
+
+
+//is added in the cero index 
+// arr.unshift(99);
+// arr.shift();
+// arr.reverse();
+
+//true
+x=arr.includes(10);
+//false
+x = arr.includes(1000);
+
+x = arr.indexOf(340);
+
+x = arr.slice(2,4);
+
+// x = arr.splice(2,4);
+// x=arr.splice(4,1);
+
+
+x= arr.splice(2,7).reverse().toString().charAt(2);
+
+
+ console.log(x) ;

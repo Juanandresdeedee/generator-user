@@ -1,0 +1,50 @@
+
+//Quick & Dirty
+
+function createListItem (item){
+    // const li= `<li ${item}</li>`;    this is what mess the people
+    const li = document.createElement('li');
+
+    li.innerHTML =` ${item}
+    <button class="remove-item btn-link text-red">
+      <i class="fa-solid fa-xmark"></i>
+    </button>`
+
+    document.querySelector('.items').appendChild(li);
+}
+
+
+//better and clean way to do this 
+
+function createNewItem (item){
+    const li = document.createElement('li');
+    //for the text node 
+   li.appendChild(document.createTextNode(item));
+    //create the button and an icon
+    const button = document.createElement('button');
+    //and button has class
+    button.className = 'remove-item btn-link text-red'   
+
+    const icon = document.createElement('i');  
+    icon.className='fa-solid fa-xmark';
+
+//icon or i tag have to be appending inside of the button 
+button.appendChild(icon);
+//and the button have to be inside of the list 
+li.appendChild(button);
+// now the only one to left to do is to append to the dom to the Ul
+document.querySelector('.items').appendChild(li);
+
+
+    // console.log(li.innerHTML);
+
+}
+
+
+createListItem ('Eggs');
+createNewItem ('Cheese');
+
+
+
+ 
+

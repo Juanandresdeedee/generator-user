@@ -1,0 +1,52 @@
+// const age = 19 ;
+
+// if (age >= 18) {
+//     console.log('You can vote!');
+// }
+
+//  else {
+//         console.log('You can not vote!');
+
+
+//  }
+
+//  THAT IN ONE LINE USING TERNARY OPERATOR 
+
+
+// age >= 18 ? console.log('You can vote!') : console.log('You can not vote!');
+
+
+
+
+// const canVote = age>=18 ? true : false;
+// const canVote2 = age>=18 ? 'you can vote' : 'can not vote';
+
+// console.log(canVote);
+// console.log(canVote2);
+
+
+const auth = true;
+// let redirect;
+
+// if (auth) {
+//     alert('You are logged in');    
+//     redirect = 'homepage';
+// }else {
+//     alert('You must log in');
+//     redirect = 'login';
+// }
+
+
+
+
+
+
+// const redirect = auth ? (alert('you are logged in'), 'homepage') : (alert('you must log in'), 'login');
+
+
+// console.log(redirect);
+
+// auth ? console.log('welcome to the dashboard') : null;
+
+auth && console.log('welcome to the dashboard');
+

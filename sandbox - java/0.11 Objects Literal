@@ -1,0 +1,57 @@
+
+
+const person = {
+ 
+    name: 'John',
+    age : 21,
+    isAdmin: true,
+    address: {
+        street : 'Main St',
+        city  : ' Cambridge',
+        state : 'fl',
+    },
+
+    hobbies: ['music', 'movies', 'sports'],
+
+};
+
+x = person.name;
+
+x = person['name'];
+
+x = person['age'];
+x = person.age;
+
+x = person.address.state;
+x = person.hobbies[2];
+
+
+person.name = 'Juan Doe';
+person['isAdmin']=false
+
+delete person.age;
+person.hadChildren =true;
+
+
+person.greet=function (){
+
+    // console.log(`Hello my name is ${this.name}`);
+
+}
+
+person.greet();
+
+
+x = person; 
+
+const person2 = {
+
+'firts name': 'brad',
+'last name': 'traversy',
+}
+
+x= person2['firts name'];
+
+
+console.log(x);
+

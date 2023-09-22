@@ -1,0 +1,118 @@
+
+function registerUser (user){
+
+  return user + ' is registered';
+
+}
+console.log (registerUser('JUAN'));
+
+
+
+
+function registroUsuario (user) {
+
+        return user + ' esta registrada';
+
+}
+
+console.log(registroUsuario('Marina') );
+
+
+
+function registerUser (x ='y') {
+return x + ' is registered';
+
+}
+
+console.log(registerUser());
+
+
+function registerUser (user='joe') {
+        return user + ' is registered';
+        
+        }
+        
+        console.log(registerUser());
+
+
+function sum (...numbers){
+
+      let total = 0;
+      for ( const num of numbers){
+        total += num;
+      }
+
+      return total;
+
+
+}
+
+console.log(sum(1,2,3,4,5,6,7,8,9,10,120));
+
+
+
+
+function loginUser (user){
+ return ` the user with ${user.name} and login${user.login} is done`;     
+
+}
+
+const user = {
+
+        name: 'Juan',
+        login: 'juan123'
+};
+
+console.log(loginUser(user));
+console.log(loginUser({
+        name: 'marina',
+        login: 123
+}));
+
+
+function getRandom (arr) {
+
+        const index = Math.floor(Math.random() * arr.length);
+
+        const item = arr[index];
+
+        console.log(item);
+
+
+}
+ getRandom ([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]);
+
+
+
+
+function obtenerAleatorio(arr){
+
+        const indice = Math.floor(Math.random() * arr.length);
+
+        const item = arr[indice];
+
+
+        console.log(item);
+
+}
+
+
+obtenerAleatorio([1,22,34,55,68,79,80,91,104])
+
+
+
+
+function obtenerAleatorio(...arr){
+
+        const indice = Math.floor(Math.random() * arr.length);
+
+        const item = arr[indice];
+
+
+        console.log(item);
+
+}
+
+
+obtenerAleatorio(1,22,34,55,68,79,80,91,104)
+

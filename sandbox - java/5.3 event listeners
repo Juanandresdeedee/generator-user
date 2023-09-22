@@ -1,0 +1,53 @@
+//javascript event listeners
+
+const clearBtn = document.querySelector('#clear');
+
+function onClear() {
+    const itemList= document.querySelector('ul');
+const items = itemList.querySelectorAll('li');
+
+    // itemList.innerHTML='';
+
+// items.forEach((item)=>item.remove());
+
+while (itemList.firstChild){
+    itemList.removeChild(itemList.firstChild);
+
+
+}
+
+
+
+
+}
+
+// clearBtn.onclick = function() {
+// alert('Clear Items');
+// };
+
+//add event listeners
+
+// clearBtn.addEventListener('click', function() {
+
+// alert('Clear Items');
+
+// });
+
+// //short
+
+// clearBtn.addEventListener('click',() => alert('Clear items'));
+
+
+
+// clearBtn.addEventListener('click',() => console.log('Clear items'));
+
+
+
+
+// clearBtn.addEventListener('click',onClear());
+
+//call remove event listeners
+
+clearBtn.addEventListener('click',onClear);
+
+// setTimeout(()=>clearBtn.removeEventListener('click',onClear),5000);

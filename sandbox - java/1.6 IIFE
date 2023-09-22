@@ -1,0 +1,22 @@
+
+
+
+(function() {
+        
+        const user = 'juana';
+
+        console.log(user);
+
+        const x = () => console.log('hello from IIFE');
+
+        x();
+}) ();
+
+
+(function(name){
+
+console.log('hello ' + name);
+
+
+
+})('shawn');

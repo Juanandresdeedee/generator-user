@@ -1,0 +1,45 @@
+
+
+let output;
+
+const parent = document.querySelector('.parent');
+
+output = parent.children;
+output = parent.children[2].innerText;
+output = parent.children[2].className;
+output = parent.children[2].nodeName;
+// output = parent.children[1];
+
+
+parent.children[0].innerText = 'child juan';
+parent.children[0].style.color= 'red';
+parent.firstElementChild.innerText = 'child juan';
+parent.lastElementChild.innerText = 'child juan';
+
+//get parent element from children
+
+
+const child = parent.querySelector('.child');
+output=child.parentElement;
+
+child.parentElement.style.border= '1px solid #ccc';
+child.parentElement.style.padding= '10px';
+
+// sibling element
+
+const secondItem=document.querySelector('.child:nth-child(2)');
+
+output=secondItem;
+output=secondItem.nextElementSibling.style.color='green';
+output=secondItem.previousElementSibling.style.color='orange';
+
+
+
+console.log(output);
+// console.dir (output);
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+
+
+let x ;
+
+
+
+const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
+
+const berries = ['blueberry', 'strawberry', 'raspberry'];
+
+
+// fruits.push(berries);
+
+// x = fruits[4][2];
+
+
+const allFruits = [fruits, berries];
+
+x = allFruits;
+
+
+//if you want strawberry you go to the second container which is berries (1) and select (1)
+
+// x = allFruits[1][1];
+
+
+// x = fruits.concat(berries);
+
+//same to concat 
+
+x = [...fruits, ...berries];
+
+
+// now berries is inside fruits as an array
+
+x = [...fruits, berries];
+
+//FLATTEN ARRAY
+
+const arr = [1,2,3,[4,5],6,7,[8,9],10];
+x = arr.flat();
+
+// console.log(arr);
+
+
+//STATIC METHODS ON ARRAY OBJECT 
+
+x = Array.isArray('hello');
+
+
+x= Array.from('1,2,3,4,5,6,7,8,9,10');
+
+const a = 1;
+const b = 2;
+const c = 3;
+
+x = Array.of(a,b,c);
+
+
+
+
+
+
+

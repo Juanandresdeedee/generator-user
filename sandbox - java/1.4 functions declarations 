@@ -1,0 +1,15 @@
+function dollarSign(value) {
+  return '$' + value;
+}
+
+console.log(dollarSign(100)); 
+
+
+
+const addDollarSign = function(value) {
+        return '+' + value;
+
+
+}
+
+console.log(addDollarSign(5000));

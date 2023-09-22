@@ -1,0 +1,81 @@
+
+
+
+const x = false 
+
+if (x) {
+
+        console.log("this is true")
+        
+        } else {
+
+        console.log("this is false")
+
+        }
+
+console.log(Boolean(x))
+
+
+const children = 4
+
+if (children) {
+        
+                console.log(`you have ${children} children`);
+   
+        } else {
+
+                console.log("you have no children");
+
+
+
+                
+                }
+
+
+                const childrens = 0
+
+
+
+
+
+if (childrens !=undefined) {
+        
+                console.log(`you have ${childrens} children`);
+   
+        } else {
+
+                console.log("you have no children");
+
+
+
+                
+                }
+
+
+const post = []
+
+
+if ( post.length>0 ) {
+console.log('post in the list' )
+
+}else {
+
+        console.log('not post in the list')
+
+}
+
+const user= {
+
+
+        // name: 'jose',
+};
+
+if(Object.keys(user).length>0) {
+
+        console.log('is user ');
+
+
+}else {
+console.log('not user');
+
+

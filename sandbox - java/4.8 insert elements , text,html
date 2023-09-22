@@ -1,0 +1,68 @@
+
+//insertAdjacentElement Example
+
+function insertElement() {
+const filter=document.querySelector('.filter');
+
+const h1 = document.createElement('h1');
+h1.textContent='insertar un elemento adyacente';
+
+
+filter.insertAdjacentElement('beforebegin', h1);
+filter.insertAdjacentElement('afterend', h1);
+
+    
+}
+
+function insertText() {
+const item = document.querySelector('li:first-child');
+
+// item.insertAdjacentText('afterend', 'insertar texto adyacente');
+item.insertAdjacentText('beforebegin', 'insertar texto adyacente');
+//item.insertAdjacentText('beforeend', 'insertar texto adyacente');
+}
+//insertHTML Example
+function insertHTML() {
+    const clearBtn = document.querySelector('#clear');
+
+clearBtn.insertAdjacentHTML('afterend', '<h2>insertar hTML adyacente</h2> ');
+clearBtn.insertAdjacentHTML('beforebegin', '<h2>insertar hTML adyacente</h2> ');
+
+
+}
+
+
+//insert before example // isertar antes de un item 
+
+
+function insertBeforeItem(){
+const ul= document.querySelector('ul');
+
+const li=document.createElement('li');
+li.textContent='insertar antes del tercer item (oreo)';
+
+const tercerItem=document.querySelector('li:nth-child(3'));
+ul.insertBefore(li, tercerItem);
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+insertElement();
+insertText();
+insertHTML();
+
+insertBeforeItem();
+//insertAdjacentText Example
+
+
+

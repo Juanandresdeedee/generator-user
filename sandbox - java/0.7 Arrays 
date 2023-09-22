@@ -1,0 +1,42 @@
+// array literal
+let x;
+
+const numbers = [12, 45,33, 200, 300,1000];
+const mixed = [22, 'hello', true, undefined, null, {a:1, b:1}, new Date()];
+
+// array constructor
+
+
+const fruits = new Array ('apple', 'banana', 'orange', 'pineapple');
+
+
+x = numbers [0];
+x = fruits [2];
+
+
+x = numbers[1] + numbers[2];
+
+x = `my favorite fruit ${fruits[0]}`;
+
+x = mixed.length;
+
+// arrays  are mutable
+
+fruits[3] = 'grapes';
+fruits [4] = 'pears';
+
+
+// method that do this the name is push 
+
+
+fruits[fruits.length] = 'mango';
+fruits[fruits.length] = 'strawberry';
+
+
+x = fruits;
+
+
+// fruits.length = 2; 
+
+console.log(x);
+

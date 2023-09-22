@@ -1,0 +1,144 @@
+// const logo = document.querySelector('img');
+
+// logo.addEventListener('click',function(e) {
+
+// console.log(e);
+
+
+// });
+
+//another way
+
+// const logo = document.querySelector('img');
+
+// function onClick(e) {
+// console.log(e);
+
+// }
+
+// logo.addEventListener('click',onClick);
+
+
+// target 
+
+
+// const logo1 = document.querySelector('img');
+
+// function onClick(e) {
+// console.log(e.target);
+// console.log(e.currentTarget);
+
+// }
+
+// logo1.addEventListener('click',onClick);
+
+// target  , change the color of the target example
+
+// const logo = document.querySelector('img');
+
+// function onClick(e) {
+// console.log(e.target);
+// console.log(e.currentTarget);
+//  e.target.style.backgroundColor ='black';
+
+// }
+
+// logo2.addEventListener('click',onClick);
+
+
+// target on different element
+
+// const logo3 = document.querySelector('img');
+
+// logo.addEventListener('click', onClick);
+
+// document.body.addEventListener('click',function (e){
+// console.log(e.target);
+// console.log(e.currentTarget);
+
+// });
+
+
+// type
+
+
+//  const logo = document.querySelector('img');
+
+//  function onClick(e) {
+//     console.log(e.type);
+// }
+    
+// logo.addEventListener('click',onClick);
+
+
+//timeStamp
+
+// const logo5 = document.querySelector('img');
+
+// function onClick(e) {
+//    console.log(e.timeStamp);
+// }
+   
+// logo5.addEventListener('click',onClick);
+
+
+//clientX
+
+// const logo6 = document.querySelector('img');
+
+// function onClick(e) {
+//    console.log(e.clientX);
+//    console.log(e.clientY);
+// }
+   
+// logo6.addEventListener('click',onClick);
+
+
+//offset coordenadas
+
+// const logo7 = document.querySelector('img');
+
+// function onClick(e) {
+//    console.log(e.offsetX);
+//    console.log(e.offsetY);
+//    console.log(e.pageX);
+//    console.log(e.pageY);
+//    console.log(e.screenX);
+//    console.log(e.screenY);
+// }
+   
+// logo7.addEventListener('click',onClick);
+
+
+// event with a ( google)
+
+// const logo8 = document.querySelector('img');
+// document.querySelector('a').addEventListener('click',
+// function (e) {
+    // this prevent default me impide ir directamente a la pagina de google
+//     e.preventDefault();
+
+//     console.log('link is googled');
+//  });
+
+
+
+
+
+
+//using events with drag
+
+
+const logo = document.querySelector('img');
+
+function onClick(e) {
+
+}
+
+function onDrag(e) {
+  document.querySelector('h1').textContent = `X ${e.clientX} Y ${e.clientY}`;
+}
+
+logo.addEventListener('click', onClick);
+logo.addEventListener('drag', onDrag);
+

@@ -1,0 +1,69 @@
+
+
+
+
+console.log(document.getElementById('app-tittle'));
+console.log(document.getElementById('app-tittle').className);
+console.log(document.getElementById('app-tittle').getAttribute('id'));
+
+
+
+//set attributes
+
+
+
+//document.getElementById('app-tittle').id= 'new-id'; 
+document.getElementById('app-tittle').tittle= 'shopping list'; 
+document.getElementById('app-tittle').setAttribute('class', 'tittle');
+
+
+const tittle = document.getElementById('app-tittle');
+
+//console.log(tittle);
+
+//get / change content 
+
+console.log(tittle.textContent);
+tittle.textContent = 'new tittle juan ';
+ tittle.innerText = 'new tittle juan 2';
+ tittle.innerHTML = '<strong>shopping kart</strong>';
+
+
+    //change styles
+
+tittle.style.color = 'red';
+tittle.style.backgroundColor = 'black';
+tittle.style.padding = '10px';
+tittle.style.borderRadius = '10px';
+
+
+ document.querySelector remember just for a single element
+
+console.log(document.querySelector('h1'));
+console.log(document.querySelector('#app-tittle'));
+console.log(document.querySelector('.container'));
+console.log(document.querySelector('input[type="text"]'));
+console.log(document.querySelector('li:nth-child(2)').innerText);
+
+
+//change the item with querySelector
+
+const secondItem = document.querySelector('li:nth-child(2)');
+
+secondItem.innerText = 'apple juice';
+secondItem.style.color = 'red';
+
+
+//use these methods on the other elements
+
+
+const list= document.querySelector('ul');
+
+console.log(list);
+
+
+const firtsItem = document.querySelector('li');
+firtsItem.style.color = 'blue';
+
+
+

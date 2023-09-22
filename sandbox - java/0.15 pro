@@ -1,0 +1,109 @@
+
+// const library=[ 
+//     {
+//       title: 'The Road Ahead',
+//       author: 'Bill Gates',
+//       status:{
+//             own:true,
+//             reading: false,
+//             read:false
+//       },           
+//     },
+    
+//     {
+//         title: 'The Road Ahead',
+//         author: 'Bill Gates',
+//         status:{
+//               own:true,
+//               reading: false,
+//               read:false
+//         }
+//       }, 
+      
+//       {
+//         title: 'The Road Ahead',
+//         author: 'Bill Gates',
+//         status:{
+//               own:true,
+//               reading: false,
+//               read:false,
+  
+//       },
+
+//  },
+      
+// ];
+
+
+// library[0].status.read = true;
+// library[1].status.read = true;
+// library[2].status.read = true;
+
+// // console.log(library);
+
+
+
+// const {title:firtsBook} = library[0];
+
+
+// console.log(firtsBook);
+
+
+
+const library = [
+        {
+          title:'apple',
+          author:'steve',
+          status:{
+                own: true,
+                reading: false,
+                read: false
+                
+          }
+
+        },
+        {
+                title:'facebook',
+                author:'mark',
+                status:{
+                      own: true,
+                      reading: false,
+                      read: false
+                      
+                }
+      
+              },
+              {
+                title:'tesla',
+                author:'elon',
+                status:{
+                      own: true,
+                      reading: false,
+                      read: false
+                      
+                }
+      
+              },
+
+];
+
+
+// console.log(library[0]);
+
+
+
+library[0].status.read=true;
+
+
+
+const {title:fb }=library[1];
+
+// console.log(fb);
+
+
+
+const libraryJSON = JSON.stringify(library);
+
+console.log(libraryJSON);
+
+
