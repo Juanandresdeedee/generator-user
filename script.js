@@ -47,7 +47,8 @@ userDisplay.innerHTML =`
      </p>
   </div>
 </div>
-</div>
+</div>  
+
 `;
 }
 
